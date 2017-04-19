@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="
   style.css">
  
-
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+ 
 </head>
 <body>
+<div id="demo">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -72,12 +75,32 @@ Yes, she had dabbled in art before. Frida’s father, whom she greatly admired, 
 It’s an origin story befitting a superhero, and Frida continued to live a heroic life despite decades of more agony and suffering (shortly after her exhibition in Mexico, her right leg had to be amputated below the knee due to gangrene). She really was “la heroina del dolor”, the Heroine of Pain.</p>
 </div>
 			</div>
-		</div>
+		
+	</div>
 	</div>
 	<div id="footer" class="container">
 
 	<div class="col-md-12">
-			<div class="row strip">@developed by anjali</div>
+			<div class="row strip"></div>
+		
 		</div>
+		</div>
+</div>
+	<script type="text/javascript">
+ 	
+var scrollTimeout = false;
+
+$(window).scroll(function(event){
+    
+    clearTimeout(scrollTimeout);
+
+    scrollTimeout = setTimeout(function(){
+        var scrolled = $(document).scrollTop() ;
+        console.log("The value scrolled was " + scrolled);
+    }, 1000);
+});
+
+ 	
+ </script>	
 </body>
 </html>
